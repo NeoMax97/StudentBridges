@@ -1,0 +1,12 @@
+#loginpage, #signuppage {
+	&.container {
+		max-width: 540px;
+	}
+}
+
+#nav-container {
+	background-color: #e2e3e5;
+	@media (min-width: 768px) {
+		height: 100vh;
+	}
+}

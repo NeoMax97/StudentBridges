@@ -1,0 +1,29 @@
+{
+  "name": "StudentBridgesPortal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/elicik/StudentBridgesPortal",
+  "author": "Eli Gukovsky <gukovskye@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "browserify src/index.jsx -o build/app.js -t [ babelify ] -t [ scssify ]]",
+    "watch": "watchify src/index.jsx -o build/app.js -t [ babelify ] -t [ scssify ]] -v"
+  },
+  "dependencies": {
+    "bootstrap": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "sweetalert2": "latest"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "babelify": "latest",
+    "browserify": "latest",
+    "scssify": "latest",
+    "watchify": "latest"
+  }
+}
